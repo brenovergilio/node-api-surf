@@ -48,7 +48,10 @@ export class Forecast {
     }
   }
 
-  private enrichedBeachData(points: ForecastPoint[], beach: Beach): BeachForecast[] {
+  private enrichedBeachData(
+    points: ForecastPoint[],
+    beach: Beach
+  ): BeachForecast[] {
     return points.map((e) => ({
       ...{
         lat: beach.lat,
